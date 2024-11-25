@@ -42,8 +42,12 @@ def get_top_5_students(data):
 # Main menu function
 def menu():
     # Get the file from the user
-    file_path = input("Enter the path to your CSV file (in .csv format): ")
-    data = load_data(file_path)
+    print()
+    print("-----------------------------------------------------------------------")
+    print()
+    print("Loading data for your CSV file :)  ")
+    
+    data = load_data("students.csv")
     if data is None:
         return  # Stop if no data is loaded
 
