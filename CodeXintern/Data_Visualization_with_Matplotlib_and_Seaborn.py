@@ -59,8 +59,12 @@ def plot_top_5_students(data):
 
 # Menu-driven function for visualizations
 def menu():
-    file_path = input("Enter the path to your CSV file: ")
-    data = load_data(file_path)
+    print()
+    print("-----------------------------------------------------------------------")
+    print()
+    print("Loading visualizations for your CSV file :) ")
+    print()
+    data = load_data("students.csv")
     if data is None:
         return  # Stop if no data is loaded
 
@@ -99,3 +103,4 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+
